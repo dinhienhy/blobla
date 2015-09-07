@@ -1,0 +1,34 @@
+.check, .result{
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+.result {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 500px;
+}
+.content-result{
+    background-color: #ddd;
+    text-align: justify;
+    width: 360px;
+    padding: 10px;
+    float: right;
+    font-size: 26px;
+    line-height: 1.3em;
+    margin: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.content-result:before {
+    content:"";
+    position: absolute;
+    right: 100%;
+    bottom: 35px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 40px solid #ddd;
+    border-bottom: 0px solid transparent;
+}
